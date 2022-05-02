@@ -1,0 +1,4 @@
+Python==3.9.6
+openpyxl==3.0.7
+PyQt5==5.15.4
+numpy==1.21.1                       

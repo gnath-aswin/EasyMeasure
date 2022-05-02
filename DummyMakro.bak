@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="ASCII"?>
+<macroinfo:macroinfo xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:commandlist="http://www.olympus.co.jp/hpf/macro/model/commandlist" xmlns:macroinfo="http://www.olympus.co.jp/hpf/macro/model/macroinfo">
+  <majorVersion>1</majorVersion>
+  <minorVersion>1</minorVersion>
+  <commands>
+    <category>Microscope</category>
+    <name>setAutoSaveSetting</name>
+    <parameters>
+      <name>name</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>DOE_Probe_01-98</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>directory</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>D:\Data\Smarra\Dissertation\01-98</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>comment</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value></value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>fileCount</name>
+      <paramValue xsi:type="commandlist:IntValue">
+        <value>4</value>
+      </paramValue>
+      <type>1</type>
+    </parameters>
+    <parameters>
+      <name>defaultExtension</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>POIR</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>additionalFile</name>
+      <paramValue xsi:type="commandlist:BooleanValue">
+        <value>false</value>
+      </paramValue>
+      <type>3</type>
+    </parameters>
+    <parameters>
+      <name>additionalExtension</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>JPEG</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>snapExtension</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>JPEG</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>AUTO_SAVE_SETTING</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Analysis</category>
+    <name>set_report_template</name>
+    <parameters>
+      <name>filepath</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>D:\Data\Smarra\Dissertation\DOE_01-98_Kreuze.tpl</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>SET_REPORT_TEMPLATE</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Microscope</category>
+    <name>setMultiPointArea</name>
+    <parameters>
+      <name>executionType</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>EXECUTION_TYPE_STITCH</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>lengthMode</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>NUMBER_MODE</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>colNumber</name>
+      <paramValue xsi:type="commandlist:IntValue">
+        <value>2</value>
+      </paramValue>
+      <type>1</type>
+    </parameters>
+    <parameters>
+      <name>rowNumber</name>
+      <paramValue xsi:type="commandlist:IntValue">
+        <value>2</value>
+      </paramValue>
+      <type>1</type>
+    </parameters>
+    <parameters>
+      <name>widthLength</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>0.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>heightLength</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>0.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>MATL_POINT_AREA</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Microscope</category>
+    <name>moveXYStage</name>
+    <parameters>
+      <name>x</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>-26737.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>y</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>31899.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>escape</name>
+      <paramValue xsi:type="commandlist:BooleanValue">
+        <value>false</value>
+      </paramValue>
+      <type>3</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>XY_STAGE_POSITION_SETTING</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Microscope</category>
+    <name>3DExtendAcquisition</name>
+    <parameters>
+      <name>name</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>DOE_Probe_01-98</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>directory</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>D:\Data\Smarra\Dissertation\01-98</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>executionType</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>EXECUTION_TYPE_STITCH</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>acquisitionMode</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>ACQUISITION_MODE_3D_STANDARD</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>rangeMode</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>RANGE_MODE_AUTO</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>upperPosition</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>0.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>lowerPosition</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>0.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>upperRange</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>0.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>lowerRange</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>0.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>skipUpperPosition1</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>0.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>skipLowerPosition1</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>0.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>skipUpperRange1</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>0.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>skipLowerRange1</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>0.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>highResolution</name>
+      <paramValue xsi:type="commandlist:BooleanValue">
+        <value>false</value>
+      </paramValue>
+      <type>3</type>
+    </parameters>
+    <parameters>
+      <name>stepMode</name>
+      <paramValue xsi:type="commandlist:BooleanValue">
+        <value>false</value>
+      </paramValue>
+      <type>3</type>
+    </parameters>
+    <parameters>
+      <name>pitch</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>1.2</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>color</name>
+      <paramValue xsi:type="commandlist:BooleanValue">
+        <value>true</value>
+      </paramValue>
+      <type>3</type>
+    </parameters>
+    <parameters>
+      <name>bandSize</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>BAND_SIZE_1_1</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>doubleScan</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>OFF</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>zSkip</name>
+      <paramValue xsi:type="commandlist:BooleanValue">
+        <value>true</value>
+      </paramValue>
+      <type>3</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>ACQUISITION_3D</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Analysis</category>
+    <name>save_report</name>
+    <parameters>
+      <name>directory</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>D:\Data\Smarra\Dissertation\01-98</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>name</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>DOE_Probe_01-98_0004</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>extension</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>PDF</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>target</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value></value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>SAVE_REPORT</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Analysis</category>
+    <name>save_report</name>
+    <parameters>
+      <name>directory</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>D:\Data\Smarra\Dissertation\01-98</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>name</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>DOE_Probe_01-98_0004</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>extension</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>REP</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>target</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value></value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>SAVE_REPORT</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Analysis</category>
+    <name>close_report</name>
+    <parameters>
+      <name>target</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value></value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>CLOSE_REPORT</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Microscope</category>
+    <name>snapshot</name>
+    <parameters>
+      <name>name</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value></value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>directory</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value></value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>executionType</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>EXECUTION_TYPE_ONESHOT</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>ACQUISITION_SNAP</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Microscope</category>
+    <name>changeRevolver</name>
+    <parameters>
+      <name>revolverNo</name>
+      <paramValue xsi:type="commandlist:IntValue">
+        <value>2</value>
+      </paramValue>
+      <type>1</type>
+    </parameters>
+    <parameters>
+      <name>escapeDistance</name>
+      <paramValue xsi:type="commandlist:DoubleValue">
+        <value>1000.0</value>
+      </paramValue>
+      <type>2</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>REVOLVER_POSITION_SETTING</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Microscope</category>
+    <name>loadAlignmentSetting</name>
+    <parameters>
+      <name>filepath</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>C:\Users\olympus\Documents\test_alginment.isc</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>ALIGNMENT_SETTING</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+  <commands>
+    <category>Microscope</category>
+    <name>setAlignmentEnable</name>
+    <parameters>
+      <name>settingID</name>
+      <paramValue xsi:type="commandlist:StringValue">
+        <value>ALIGNMENT_ENABLE</value>
+      </paramValue>
+      <type>0</type>
+    </parameters>
+    <enable>true</enable>
+  </commands>
+</macroinfo:macroinfo>
