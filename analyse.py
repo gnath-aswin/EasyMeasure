@@ -45,7 +45,7 @@ class Analyse:
 
 
 
-        for workbook in range(1,self.count+1):   #when file count starts from 1 iterate till count
+        for workbook in range(1,self.count):   #when file count starts from 1 iterate till count
             #self.data.append(workbook)
 
             if (workbook<10):
@@ -126,27 +126,27 @@ class Analyse:
 
         data  = self.collect_data()
 
-        if (self.selected_parameters == ['depth','areal roughness']):
-            data.index += 1            #to start index in pandas dataframe from 1
-            if row != 0 and column != 0:
-                depth_2d = pd.DataFrame(data[['depth(μm)']].to_numpy().reshape(row,column)) #reshape(row,column)
-                depth_2d.index += 1
-                roughness_2d = pd.DataFrame(data[['roughness(Sq[µm])']].to_numpy().reshape(row,column)) #reshape(row,column)
-                roughness_2d.index += 1 
-            with pd.ExcelWriter('output.xlsx') as writer:  
-                data.to_excel(writer, sheet_name='Main')
-                if row != 0 and column != 0:
-                    depth_2d.to_excel(writer, sheet_name='Depth')
-                    roughness_2d.to_excel(writer, sheet_name='Roughness')
+        # if (self.selected_parameters == ['depth','areal roughness']):
+        #     data.index += 1            #to start index in pandas dataframe from 1
+        #     if row != 0 and column != 0:
+        #         depth_2d = pd.DataFrame(data[['depth(μm)']].to_numpy().reshape(row,column)) #reshape(row,column)
+        #         depth_2d.index += 1
+        #         roughness_2d = pd.DataFrame(data[['roughness(Sq[µm])']].to_numpy().reshape(row,column)) #reshape(row,column)
+        #         roughness_2d.index += 1 
+        #     with pd.ExcelWriter('output.xlsx') as writer:  
+        #         data.to_excel(writer, sheet_name='Main')
+        #         if row != 0 and column != 0:
+        #             depth_2d.to_excel(writer, sheet_name='Depth')
+        #             roughness_2d.to_excel(writer, sheet_name='Roughness')
         
-        if (self.selected_parameters == ['depth']):
+        for parameter in self.selected_parameters:
             data.index += 1            #to start index in pandas dataframe from 1
             if row != 0 and column != 0:
-                depth_2d = pd.DataFrame(data[['depth(μm)']].to_numpy().reshape(row,column)) #reshape(row,column)
-                depth_2d.index += 1
+                parameter_2d = pd.DataFrame(data[[parameter]].to_numpy().reshape(row,column)) #reshape(row,column)
+                parameter_2d.index += 1
             with pd.ExcelWriter('output.xlsx') as writer:  
                 data.to_excel(writer, sheet_name='Main')
                 if row != 0 and column != 0:
-                    depth_2d.to_excel(writer, sheet_name='Depth')
+                    parameter_2d.to_excel(writer, sheet_name=parameter)
 
         
